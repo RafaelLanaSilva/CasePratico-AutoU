@@ -1,0 +1,67 @@
+# ---------------------------
+# ArquivosPastas do Python
+# ---------------------------
+__pycache__
+.py[cod]
+.so
+.pyd
+.pyo
+
+# Distribuição  Pacotes
+.Python
+build
+develop-eggs
+dist
+downloads
+eggs
+.eggs
+lib
+lib64
+parts
+sdist
+var
+wheels
+sharepython-wheels
+.egg-info
+.installed.cfg
+.egg
+MANIFEST
+
+# Ambientes virtuais
+venv
+.venv
+env
+ENV
+env.bak
+venv.bak
+
+# Testes  Cache
+.pytest_cache
+.coverage
+htmlcov
+.tox
+.nox
+.mypy_cache
+.dmypy.json
+dmypy.json
+.pyre
+.pytype
+coverage.xml
+
+# Logs
+.log
+
+# Notebooks
+.ipynb_checkpoints
+
+# ---------------------------
+# VS Code
+# ---------------------------
+.vscode
+.code-workspace
+
+# ---------------------------
+# Sistema Operacional
+# ---------------------------
+.DS_Store
+Thumbs.db
