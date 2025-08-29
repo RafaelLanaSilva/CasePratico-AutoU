@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <title>Classificação de Emails</title>
-  
-  <!-- Bootstrap CSS (CDN) -->
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,29 +14,29 @@
   <div class="container py-5">
     <div class="row justify-content-center">
       <div class="col-md-8 col-lg-6">
-        
+
         <!-- Card -->
         <div class="card shadow-lg">
           <div class="card-body">
             <h1 class="h4 text-center mb-4">📧 Analisador de Emails com IA</h1>
-            
+
             <form id="emailForm" action="/processar-email" method="post" enctype="multipart/form-data">
               <!-- Texto -->
               <div class="mb-3">
                 <label for="conteudo" class="form-label">Digite ou cole o conteúdo do email:</label>
-                <textarea id="conteudo" name="conteudo" class="form-control" rows="5" placeholder="Cole aqui o email..."></textarea>
+                <textarea id="conteudo" name="conteudo" class="form-control" rows="5"
+                  placeholder="Cole aqui o email..."></textarea>
               </div>
-              
+
               <!-- Arquivo -->
               <div class="mb-3">
                 <label for="arquivo" class="form-label">Ou envie um arquivo (.pdf ou .txt):</label>
                 <input type="file" id="arquivo" name="arquivo" class="form-control" accept=".pdf,.txt">
               </div>
-              
-              <!-- Botão -->
+
               <button type="submit" class="btn btn-primary w-100">Processar</button>
             </form>
-            
+
             <!-- Resultado -->
             <div id="resultado" class="alert alert-info mt-4" style="display: none;">
               <p><strong>Categoria:</strong> <span id="categoria"></span></p>
@@ -44,6 +44,11 @@
               <p><strong>Resposta sugerida:</strong> <span id="resposta"></span></p>
               <p><strong>Confiabilidade:</strong> <span id="confianca"></span></p>
             </div>
+
+            <button id="btnRefresh" class="btn btn-sm btn-secondary mt-2" style="display: none;">
+              Atualizar
+            </button>
+
           </div>
         </div>
         <!-- /Card -->
@@ -53,7 +58,7 @@
   </div>
 
   <script>
-    document.getElementById("emailForm").addEventListener("submit", async function(event) {
+    document.getElementById("emailForm").addEventListener("submit", async function (event) {
       event.preventDefault();
 
       const conteudo = document.getElementById("conteudo").value.trim();
@@ -87,13 +92,21 @@
         document.getElementById("resposta").textContent = data.resposta;
         document.getElementById("confianca").textContent = (data.confianca * 100).toFixed(2) + "%";
         document.getElementById("resultado").style.display = "block";
+        document.getElementById("btnRefresh").style.display = "inline-block"; // mostra botão
       } catch (error) {
         alert("Erro ao processar email: " + error);
       }
     });
+
+    //Ação do botão "Atualizar"
+    document.getElementById("btnRefresh").addEventListener("click", function () {
+      document.getElementById("resultado").style.display = "none";
+      document.getElementById("btnRefresh").style.display = "none";
+      document.getElementById("emailForm").reset();
+    });
   </script>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

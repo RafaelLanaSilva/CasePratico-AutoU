@@ -26,12 +26,14 @@ h1 {
 }
 
 /* Inputs */
-textarea, input[type="file"] {
+textarea,
+input[type="file"] {
   border-radius: 10px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-textarea:focus, input[type="file"]:focus {
+textarea:focus,
+input[type="file"]:focus {
   border-color: #0d6efd;
   box-shadow: 0 0 8px rgba(13, 110, 253, 0.3);
 }
