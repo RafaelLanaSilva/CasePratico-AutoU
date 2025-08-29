@@ -1,9 +1,9 @@
-# 📧 Classificação Automática de Emails  
+# 📧 Classificação Automática de Emails com OpenAI 
 
 Este projeto é uma **Prova de Conceito (POC/MVP)** para classificação de emails usando **IA**, com retorno de **categoria (Produtivo / Improdutivo)**, **justificativa** e uma **resposta sugerida**.  
 
 O sistema é composto por:  
-- **Backend**: API em **FastAPI (Python)** para processamento, classificação e geração de resposta.  
+- **Backend**: API em **FastAPI (Python)** para processamento, classificação e geração de resposta com integração com a OpenAI.  
 - **Frontend**: Interface simples em **HTML + Bootstrap + JavaScript**, que consome os endpoints da API.  
 
 ---
@@ -15,7 +15,8 @@ O sistema é composto por:
 - **Uvicorn** (servidor ASGI)  
 - **PyPDF2** (extração de texto de PDFs)  
 - **Bootstrap 5** (estilização do frontend)  
-- **Fetch API (JS)** (requisições para o backend)  
+- **Fetch API (JS)** (requisições para o backend)
+- **OpenAI** (Inteligência Artificial que lê, analisa e classifica os emails)
 
 ---
 
