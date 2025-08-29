@@ -7,7 +7,7 @@ def gerar_resposta(categoria: str) -> str:
         ),
         "improdutivo": (
             "Sua mensagem foi recebida. "
-            "Neste momento, não é necessária nenhuma ação adicional. "
+            "Retornaremos o contato se necessário."
             "Obrigado pela compreensão."
         )
     }

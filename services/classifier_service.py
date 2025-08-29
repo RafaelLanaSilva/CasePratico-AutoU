@@ -22,11 +22,11 @@ def classificar_email(conteudo: str):
     Regras:
     1. Leia atentamente o conteúdo do email.
     2. Determine a categoria mais adequada de acordo com as definições acima.
-    3. Explique resumidamente em uma justificativa o motivo da classificação.
+    3. Explique resumidamente em uma justificativa o motivo da classificação e do que se trata o email.
     4. Retorne a resposta exclusivamente em JSON, seguindo este formato:
 
     {{
-      "categoria": "Produtivo ou Improdutivo",
+      "categoria": "Produtivo" ou "Improdutivo",
       "justificativa": "Breve explicação da classificação",
       "confianca": 0.0 a 1.0
     }}
