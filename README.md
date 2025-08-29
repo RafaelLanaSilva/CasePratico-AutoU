@@ -54,7 +54,7 @@ A documentação Swagger em:
 
 ## 💻 Frontend  
 
-1. Abra a pasta `frontend/`.  
+1. Abra a pasta `view/`.  
 2. Abra o arquivo `index.html` no navegador (ou use o **Live Server** do VS Code).  
 3. O frontend está configurado para consumir a API na porta **8000**.  
 
