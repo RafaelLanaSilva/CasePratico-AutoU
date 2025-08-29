@@ -112,6 +112,5 @@ A documentação Swagger em:
 ├── frontend/
 │   ├── index.html
 │   ├── css/
-│   └── js/
 └── README.md
 ```
