@@ -35,6 +35,9 @@ ENV
 env.bak
 venv.bak
 
+# Variáveis de ambiente
+.env
+
 # Testes  Cache
 .pytest_cache
 .coverage
