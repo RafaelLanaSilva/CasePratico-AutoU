@@ -15,3 +15,7 @@ app.add_middleware(
 
 # Inclui o router
 app.include_router(email_routes.router)
+
+@app.get("/")
+def root():
+    return {"message": "API online 🚀"}
