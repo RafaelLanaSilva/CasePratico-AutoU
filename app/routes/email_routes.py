@@ -1,8 +1,8 @@
 from fastapi import APIRouter, UploadFile, File, HTTPException
-from models.email_model import EmailRequest, EmailResponse
-from services.classifier_service import classificar_email
-from services.preprocessing_service import extrair_texto_pdf
-from services.response_service import gerar_resposta
+from app.models.email_model import EmailRequest, EmailResponse
+from app.services.classifier_service import classificar_email
+from app.services.preprocessing_service import extrair_texto_pdf
+from app.services.response_service import gerar_resposta
 import traceback
 
 router = APIRouter()
