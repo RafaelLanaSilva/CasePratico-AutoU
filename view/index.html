@@ -58,6 +58,7 @@
   </div>
 
   <script>
+
     document.getElementById("emailForm").addEventListener("submit", async function (event) {
       event.preventDefault();
 
@@ -70,12 +71,12 @@
         if (arquivo) {
           const formData = new FormData();
           formData.append("arquivo", arquivo);
-          response = await fetch("http://127.0.0.1:8000/processar-email-arquivo", {
+          response = await fetch("https://casepratico-autou.onrender.com/processar-email-arquivo", {
             method: "POST",
             body: formData
           });
         } else if (conteudo) {
-          response = await fetch("http://127.0.0.1:8000/processar-email", {
+          response = await fetch("https://casepratico-autou.onrender.com/processar-email", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ conteudo })
