@@ -4,7 +4,7 @@ from routes import email_routes
 
 app = FastAPI()
 
-#CORS
+# Configuração de CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -13,4 +13,5 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Inclui o router
 app.include_router(email_routes.router)
