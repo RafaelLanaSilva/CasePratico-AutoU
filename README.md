@@ -7,8 +7,9 @@ O sistema é composto por:
 - **Frontend**: Interface simples em **HTML + Bootstrap + JavaScript**, que consome os endpoints da API.
 
 ## IMPORTANTE!
-- A aplicação foi hospedada no serviço gratuito do Render, portante é necessário acessar o seguinte link antes de testar a aplicação para "acordar o servidor"
-- Link: https://casepratico-autou.onrender.com
+- A aplicação foi hospedada no serviço gratuito do Render, portanto é necessário acessar o seguinte link antes de testar a aplicação para "acordar o servidor"
+- Link: https://casepratico-autou.onrender.com (link para ativar o servidor)
+- Link da Aplicação: https://casepratico-autou-1.onrender.com/
 
 ---
 
