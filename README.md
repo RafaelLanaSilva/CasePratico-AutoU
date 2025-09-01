@@ -4,7 +4,11 @@ Este projeto é uma **Prova de Conceito (POC/MVP)** para classificação de emai
 
 O sistema é composto por:  
 - **Backend**: API em **FastAPI (Python)** para processamento, classificação e geração de resposta com integração com a OpenAI.  
-- **Frontend**: Interface simples em **HTML + Bootstrap + JavaScript**, que consome os endpoints da API.  
+- **Frontend**: Interface simples em **HTML + Bootstrap + JavaScript**, que consome os endpoints da API.
+
+## IMPORTANTE!
+- A aplicação foi hospedada no serviço gratuito do Render, portante é necessário acessar o seguinte link antes de testar a aplicação para "acordar o servidor"
+- Link: https://casepratico-autou.onrender.com
 
 ---
 
